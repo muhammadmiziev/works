@@ -1,0 +1,29 @@
+.sub_b:active {
+    box-shadow: 0 0 5px #555 inset;
+}
+.admin.change_comment {
+    width: 100%;
+    height: 150px;
+    max-width: 100%;
+    border: 1px solid #777;
+}
+.admin.save_changes {
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    border: none;
+    background: #009688;
+}
+.is_admin_changed {
+    color: #bbb;
+    font-size: 11px;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    text-align: right;
+}
+.info_block {
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}

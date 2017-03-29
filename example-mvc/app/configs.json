@@ -1,0 +1,65 @@
+{
+    "ENV": "dev",
+    
+    "IncludingRequirements": 1,
+    "authSalt": "ES#$%f~s!@+=#9pwr2?>~LL|P{}62gw/*-_)(eV$#%^&$^^$&*",
+
+    "requirements": {
+        "includingRequirements": 1,
+        "requirementsPath": "/app/requirements/"
+    },
+
+    "imageSettings": {
+        "width": 320,
+        "height": 240,
+        "accessImages": ["JPG", "JPEG", "PNG", "GIF"],
+        "pathStorage": "/static/img/uploads/",
+        "uploadSize": "3M"
+    },
+
+    "routing": {
+        "defaultAction": "index",
+
+        "main": {
+            "file": "main",
+            "class": "MainController"
+        },
+
+        "feedback": {
+            "file": "feedback",
+            "class": "FeedbackController"
+        },
+
+        "login": {
+            "file": "login",
+            "class": "LoginController"
+        },
+
+        "ajax": {
+            "file": "ajax",
+            "class": "AjaxController"
+        },
+        "adminpanel": {
+            "file": "admin/adminpanel",
+            "class": "AdminPanelController"
+        },
+        "adminajax": {
+            "file": "admin/adminajax",
+            "class": "AdminAjaxController"
+        }
+    },
+
+    "AccessDenied": [ "adminajax" ],
+
+    "database":{
+        "host": "localhost",
+        "user": "root",
+        "password": "root",
+        "database": "test"
+    },
+
+    "sessions":{
+        "name": "SID"
+    }
+
+}
